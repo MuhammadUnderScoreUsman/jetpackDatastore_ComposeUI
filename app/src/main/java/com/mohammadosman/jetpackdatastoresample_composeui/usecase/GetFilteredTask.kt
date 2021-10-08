@@ -11,14 +11,6 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 
-/**
- * Be-aware! This is not common practise in CA that we take reference directly from
- * framework module but we use data source layer to access the data and this is not
- * recommended way to this. The main purpose this Project sample is Data Store and JPC
- * not CA
- * */
-
-// don't even pass context in use cases, This is worst..
 class GetFilteredTask(
     private val dao: TaskDao
 ) {
